@@ -1,0 +1,43 @@
+.tasks {
+  background-color: rgb(184, 184, 184);
+  padding: 10px 14px 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .task {
+    font-size: 20px;
+    &.done {
+      color: red;
+      text-decoration: line-through;
+    }
+  }
+}
+.icons-container {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  .complete {
+    color: green;
+    cursor: pointer;
+
+    &:active {
+      scale: 0.9;
+    }
+  }
+  .edit {
+    color: blue;
+    cursor: pointer;
+
+    &:active {
+      scale: 0.9;
+    }
+  }
+  .delete {
+    color: red;
+    cursor: pointer;
+
+    &:active {
+      scale: 0.9;
+    }
+  }
+}

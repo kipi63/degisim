@@ -1,0 +1,88 @@
+.task-container {
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 10px 14px 10px 15px;
+
+    h1 {
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .task-text {
+        text-transform: capitalize;
+
+        &.completed {
+            text-decoration: line-through;
+            opacity: 0.3;
+            color: red;
+        }
+    }
+}
+.form-todo {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    .input {
+        width: 80%;
+        min-width: 30%;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        &:active,
+        &:focus {
+            border: noe;
+        }
+    }
+    .input-btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 20%;
+        min-width: 10%;
+
+        .input-btn {
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            &.success {
+                background-color: green;
+            }
+            &.warning {
+                background-color: red;
+            }
+        }
+    }
+}
+.tasks {
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.footer-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .delete-all {
+        padding: 10px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+    }
+
+    .excel-button {
+        padding: 10px;
+        background-color: green;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        &:active {
+            scale: 0.92;
+        }
+    }
+}

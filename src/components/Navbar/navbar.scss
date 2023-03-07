@@ -1,0 +1,15 @@
+.nav {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.link {
+  color: grey;
+  padding: 5px;
+  &.active {
+    color: rgba(0, 109, 119, 1);
+    border-bottom: 2px solid rgba(0, 109, 119, 1);
+  }
+}
